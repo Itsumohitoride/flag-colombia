@@ -35,10 +35,8 @@ public class FlagMessageThread extends Thread{
 				
 				for(int i = 0; i<height; i++) {
 					
-					synchronized (flagMessageUI) {
 						flagMessage.advance(color);
 						flagMessageUI.printMessage();
-					}
 					try {
 						FlagMessageThread.sleep(sleep);
 					} catch (InterruptedException e) {
